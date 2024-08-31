@@ -96,34 +96,35 @@ nav ul li a:hover {
     background-color: #00796b;
 }
 
+/* Destinations Section */
 .destinations {
-    padding: 50px 20px;
-    background-color: white;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
 .destinations h2 {
     font-size: 36px;
-    margin-bottom: 40px;
     color: #004d40;
+    margin-bottom: 40px;
 }
 
 .destination-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .destination {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 10px;
+    background-color: #ffffff;
     border-radius: 10px;
-    width: 300px;
-    text-align: center;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: left;
 }
 
 .destination:hover {
@@ -133,16 +134,164 @@ nav ul li a:hover {
 
 .destination img {
     width: 100%;
-    border-radius: 10px;
     height: 200px;
     object-fit: cover;
 }
 
-.destination h3 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #004d40;
+.destination-info {
+    padding: 20px;
 }
+
+.destination-info h3 {
+    font-size: 24px;
+    color: #004d40;
+    margin: 10px 0;
+}
+
+.destination-info p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .destination-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .destination-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* About Us Section */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-container h2 {
+    grid-column: span 2;
+    font-size: 36px;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .about-container h2 {
+        text-align: center;
+    }
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item i {
+    font-size: 36px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.contact-item h3 {
+    font-size: 24px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+}
+
+
 
 footer {
     background-color: #004d40;
