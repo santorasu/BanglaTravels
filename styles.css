@@ -215,6 +215,26 @@ nav ul li a:hover {
 }
 
 
+
+/* new add */
+#toggle-btn {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-btn:hover {
+    background-color: #00796b;
+}
+
+
+
+
+
 /* Contact Us Section */
 .contact-us {
     background-color: #f9f9f9;
@@ -301,3 +321,8 @@ footer {
     margin-top: 50px;
     font-size: 14px;
 }
+
+
+
+
+
