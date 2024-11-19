@@ -124,6 +124,35 @@
     </div>
 </section>
 
+<!-- user information form -->
+ <section class="txt-color">
+    <h2 style="text-align: center;">User Information Form</h2>
+    <form id="userform">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="number" id="phone" name="phone" placeholder="Phone" required>
+        <button type="button"onclick="createUser()">Add User</button>
+        <button type="button" onclick="updateUser()" style="display: none;">Update User</button>
+    </form>
+ </section>
+
+ <!-- Users list -->
+ <section class="txt-color">
+    <h2 style="text-align: center;">Users List</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>
+    </table>
+ </section>
+
 
 
     <footer>
@@ -131,5 +160,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="client.js"></script>
 </body>
 </html>
