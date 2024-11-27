@@ -6,8 +6,6 @@
 
 # BanglaTravels
 
-Live page link: https://santorasu.github.io/BanglaTravels/
-
 BanglaTravels is a tourist website designed to showcase the beauty and attractions of Bangladesh. It provides information on popular travel destinations, rich cultural experiences, and breathtaking natural wonders. The website is designed with a clean, modern user interface, responsive design, and interactive features for an engaging user experience.
 
 ## Features
