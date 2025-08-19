@@ -25,3 +25,4 @@ BanglaTravels is a tourist website designed to showcase the beauty and attractio
 - **CSS3**: For styling and responsive design, including animations and media queries.
 - **JavaScript**: Enhances user interactivity, such as smooth scrolling and image slider functionality.
 - **Google Fonts**: For modern and clean typography...
+  Tailwind CSS
